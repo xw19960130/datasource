@@ -22,12 +22,7 @@ public class DataSource2Config {
     /**
      *
      * @methodDesc: 功能描述:(配置test2数据库)
-     * @author: 余胜军
      * @param: @return
-     * @createTime:2017年9月17日 下午3:16:44
-     * @returnType:@return DataSource
-     * @copyright:上海每特教育科技有限公司
-     * @QQ:644064779
      */
     @Bean(name = "test2DataSource")
     @ConfigurationProperties(prefix = "spring.datasource.test2")
@@ -38,18 +33,10 @@ public class DataSource2Config {
     /**
      *
      * @methodDesc: 功能描述:(test2 sql会话工厂)
-     * @author: 余胜军
      * @param: @param
      *             dataSource
      * @param: @return
      * @param: @throws
-     *             Exception
-     * @createTime:2017年9月17日 下午3:17:08
-     * @returnType:@param dataSource
-     * @returnType:@return
-     * @returnType:@throws Exception SqlSessionFactory
-     * @copyright:上海每特教育科技有限公司
-     * @QQ:644064779
      */
     @Bean(name = "test2SqlSessionFactory")
     public SqlSessionFactory testSqlSessionFactory(@Qualifier("test2DataSource") DataSource dataSource)
@@ -65,18 +52,10 @@ public class DataSource2Config {
     /**
      *
      * @methodDesc: 功能描述:(test2 事物管理)
-     * @author: 余胜军
      * @param: @param
      *             dataSource
      * @param: @return
      * @param: @throws
-     *             Exception
-     * @createTime:2017年9月17日 下午3:17:08
-     * @returnType:@param dataSource
-     * @returnType:@return
-     * @returnType:@throws Exception SqlSessionFactory
-     * @copyright:上海每特教育科技有限公司
-     * @QQ:644064779
      */
     @Bean(name = "test2TransactionManager")
     public DataSourceTransactionManager testTransactionManager(@Qualifier("test2DataSource") DataSource dataSource) {

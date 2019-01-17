@@ -22,12 +22,7 @@ public class DataSource1Config {
     /**
      *
      * @methodDesc: 功能描述:(配置test1数据库)
-     * @author: 余胜军
      * @param: @return
-     * @createTime:2017年9月17日 下午3:16:44
-     * @returnType:@return DataSource
-     * @copyright:上海每特教育科技有限公司
-     * @QQ:644064779
      */
     @Bean(name = "test1DataSource")
     @ConfigurationProperties(prefix = "spring.datasource.test1")
@@ -39,18 +34,10 @@ public class DataSource1Config {
     /**
      *
      * @methodDesc: 功能描述:(test1 sql会话工厂)
-     * @author: 余胜军
      * @param: @param
      *             dataSource
      * @param: @return
      * @param: @throws
-     *             Exception
-     * @createTime:2017年9月17日 下午3:17:08
-     * @returnType:@param dataSource
-     * @returnType:@return
-     * @returnType:@throws Exception SqlSessionFactory
-     * @copyright:上海每特教育科技有限公司
-     * @QQ:644064779
      */
     @Bean(name = "test1SqlSessionFactory")
     @Primary
@@ -67,18 +54,11 @@ public class DataSource1Config {
     /**
      *
      * @methodDesc: 功能描述:(test1 事物管理)
-     * @author: 余胜军
      * @param: @param
      *             dataSource
      * @param: @return
      * @param: @throws
      *             Exception
-     * @createTime:2017年9月17日 下午3:17:08
-     * @returnType:@param dataSource
-     * @returnType:@return
-     * @returnType:@throws Exception SqlSessionFactory
-     * @copyright:上海每特教育科技有限公司
-     * @QQ:644064779
      */
     @Bean(name = "test1TransactionManager")
     @Primary

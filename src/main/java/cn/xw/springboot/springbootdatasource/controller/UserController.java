@@ -56,7 +56,7 @@ public class UserController {
     }
 
     @RequestMapping("/user002")
-    public Object user002(int id,String name){
+    public Object user002(   int id,String name){
         return UserService002.insertUser(id,name);
     }
 
